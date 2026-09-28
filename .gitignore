@@ -1,0 +1,27 @@
+### IntelliJ IDEA ###
+microgrid-twin-sim-backend/target
+microgrid-twin-sim-front/dist/
+microgrid-twin-sim-front/node_modules/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Examples ###
+/examples/*
+
+### workspace ###
+*/.idea
+.idea/
+
+### Env ###
+.env

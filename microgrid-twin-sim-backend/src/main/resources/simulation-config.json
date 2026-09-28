@@ -1,0 +1,58 @@
+{
+  "simulation": {
+    "tickIntervalMillis": 1000,
+    "externalSourceCost": "50.0",
+    "externalSourceCap": "500.0",
+    "metricsPerNTicks": 2,
+    "forecast": {
+      "H_hist": 24,
+      "H_pred": 4,
+      "replanEvery": 2,
+      "epsilonBreak": 20.0,
+      "enablePredictive": 1,
+      "useMC": 0
+    },
+    "weather": {
+      "sunriseTick": 6,
+      "sunsetTick": 18,
+      "sunPeakTick": 12,
+      "gPeak": 1000.0,
+      "tempMeanDay": 25.0,
+      "tempMeanNight": 15.0,
+      "tempMinTick": 5,
+      "sigmaG": 0.15,
+      "sigmaT": 0.8
+    },
+    "agents": [
+      {
+        "type": "energySource",
+        "name": "SolarPanel1",
+        "noOfPanels": 500,
+        "efficiency": 0.20,
+        "area": 1.6,
+        "tempCoeff": -0.0038,
+        "noct": 45.0
+      },
+      {
+        "type": "energyStorage",
+        "name": "Battery1",
+        "capacity": 300.0,
+        "etaCharge": 0.94,
+        "etaDischarge": 0.92,
+        "cRate": 0.5,
+        "selfDischarge": 3.9e-4,
+        "initialSoC": 30.0
+      },
+      {
+        "type": "load",
+        "name": "Building1",
+        "nominalLoad": 150.0
+      },
+      {
+        "type": "load",
+        "name": "Building2",
+        "nominalLoad": 100.0
+      }
+    ]
+  }
+}
